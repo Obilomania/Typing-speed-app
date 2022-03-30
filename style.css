@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+button {
+  border: none;
+  background: none;
+}
+
+header {
+  background-color: blueviolet;
+  width: 100%;
+  height: 12vh;
+  padding: 2rem;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  letter-spacing: 0.8rem;
+}
+/* --------------CONTENT------------------------------------ */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100vw;
+}
+.container h3 {
+  font-variant: small-caps;
+  color: blueviolet;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.typing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+textarea {
+  resize: none;
+  width: 40rem;
+  height: 18rem;
+  border: 0.175rem solid blueviolet;
+  border-radius: 2rem 0 2rem 0;
+  color: blueviolet;
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+}
+.time {
+  font-family: "Orbitron", sans-serif;
+  font-size: 6rem;
+  font-weight: lighter;
+  color: blueviolet;
+}
+.buttons{
+     display: flex;
+     gap: 2rem;
+}
+.btn{
+    background: blueviolet;
+    padding: .5rem 1rem;
+    color: white;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+#remark{
+    width: 25rem;
+    text-align: center;
+    background: hsl(271, 76%, 53%, .7);
+    padding: .3rem 4rem;
+    color: white;
+    font-size: 3rem;
+}

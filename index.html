@@ -21,15 +21,16 @@
     <div class="container">
         <h3>Click the start Button to start typing</h3>
         <div action="" class="typing">
-            <div class="time">08:20</div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="time">00:00</div>
+            <textarea name="" id="textarea" cols="30" rows="10" oninput="countWord"  ></textarea>
         </div>
         <div class="buttons">
-            <button class="btn start"> Start</button>
-            <button class="btn Stop"> Stop</button>
-        
+            <button class="btn start" onclick="start()"> Start</button>
+            <button class="btn Stop" onclick="stopit()">Stop</button>
+            <button class="btn Stop" onclick="reset()"> Reset</button>
+
         </div>
-        <span id="remark">GOOD</span>
+        <p id="remark"></p>
     </div>
 
 </body>

@@ -22,8 +22,12 @@
         <h3>Click the start Button to start typing</h3>
         <div action="" class="typing">
             <div class="time">00:00</div>
-            <textarea name="" id="textarea" cols="30" rows="10" oninput="countWord"  ></textarea>
+            <textarea name="" id="textarea" cols="30" rows="10" oninput="countWord()"></textarea>
+
         </div>
+        <p> Word Count:
+            <span id="show">0</span>
+        </p>
         <div class="buttons">
             <button class="btn start" onclick="start()"> Start</button>
             <button class="btn Stop" onclick="stopit()">Stop</button>

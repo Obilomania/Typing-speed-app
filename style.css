@@ -64,6 +64,13 @@ textarea {
   font-weight: lighter;
   color: blueviolet;
 }
+p{
+  color: blueviolet;
+  font-weight: bolder;
+}
+#show{
+  color: blueviolet;
+}
 .buttons {
   display: flex;
   gap: 2rem;

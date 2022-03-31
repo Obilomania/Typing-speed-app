@@ -3,13 +3,11 @@ var running = 0;
 var startBtn = document.querySelector(".start");
 var timeCount = document.querySelector(".time");
 var remark = document.getElementById("remark");
-const message = document.getElementById("textarea");
-console.log(message.value);
-// var seconds = Date.getSeconds();
+var message = document.getElementById("textarea");
+message.value = "";
 
 /* ------------------TIMER--------------------------------- */
 function start() {
-  message.click();
   if (running == 0) {
     running = 1;
     increment();
@@ -20,6 +18,9 @@ function start() {
 
 /* -------------------STOP---------------------------------------- */
 function stopit() {
+  if (message.value === "") {
+    alert("Click Start and Write Some Text");
+  }
   running = 0;
 }
 
@@ -51,4 +52,19 @@ function increment() {
   }
 }
 
-/* ----------------START----------------------------- */
+/* ----------------COUNT WORDS----------------------------- */
+function countWord() {
+  words = message.value;
+
+  var count = 0;
+
+  var split = words.split(" ");
+
+  for (var i = 0; i < split.length; i++) {
+    if (split[i] != "") {
+      count += 1;
+    }
+  }
+
+  document.getElementById("show").innerHTML = count;
+}
